@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Syahid Shopee</title>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Arial Black', sans-serif;
+      overflow: hidden;
+    }
+
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background: #000;
+      z-index: -1;
+    }
+
+    .splash {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      color: white;
+      animation: fadeOut 1s ease 3s forwards;
+      position: relative;
+      z-index: 1;
+    }
+
+    .splash h1 {
+      font-size: 2.5em;
+      color: #00ccff;
+      text-shadow: 0 0 20px #00ccff;
+      margin-bottom: 20px;
+    }
+
+    .loader {
+      border: 5px solid #333;
+      border-top: 5px solid #00ccff;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    @keyframes fadeOut {
+      to {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+
+    .main-content {
+      display: none;
+      color: white;
+      padding: 20px;
+      min-height: 100vh;
+      position: relative;
+      z-index: 1;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: #00ccff;
+      margin-bottom: 20px;
+      text-align: center;
+      animation: glow 2s infinite alternate;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 5px #00ccff; }
+      to { text-shadow: 0 0 20px #00ccff; }
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin: 20px 0;
+    }
+
+    .card {
+      background: #111;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 0 15px rgba(0,255,255,0.5);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 25px rgba(255,255,255,0.6);
+    }
+
+    .card h2 {
+      font-size: 1.4em;
+      margin-bottom: 10px;
+    }
+
+    .features {
+      text-align: left;
+      margin-top: 10px;
+      color: #66ccff;
+      font-size: 0.9em;
+    }
+
+    .price {
+      background: #00ccff;
+      color: black;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 10px;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: #00ccff;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background: #00ccff;
+    }
+
+    .contact a {
+      color: #00ffcc;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Particle Background -->
+  <div id="particles-js"></div>
+
+  <!-- Splash Screen -->
+  <div class="splash" id="splash">
+    <h1>Welcome To Syahid Shopee</h1>
+    <div class="loader"></div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content" id="main">
+    <h1>List Shopee Syahid</h1>
+    <div class="cards">
+      <!-- Card Contoh -->
+      <div class="card">
+        <h2>Jasbug Per No</h2>
+        <div class="features">
+        </div>
+        <div class="price">5.000</div>
+        <a class="btn" href="https://wa.me/6285741770268?text=Payment%20bang%20mau%20order%20jasbug" target="_blank">WhatsApp</a>
+        <a class="btn" href="https://t.me/SQUADCIT?text=Payment%20bang%20mau%20order%20jasbug" target="_blank">Telegram</a>
+      </div>
+      <div class="card">
+        <h2>Script Bug Wa Via Wa</h2>
+        <div class="features">
+        </div>
+        <div class="price">15.000</div>
+        <a class="btn" href="https://wa.me/6285741770268?text=Payment%20bang%20mau%20buy%20sc%20bug%20wa%20via%20wa" target="_blank">WhatsApp</a>
+        <a class="btn" href="https://t.me/SQUADCIT?text=Payment%20bang%20mau%20buy%20sc%20bug%20wa%20via%20wa" target="_blank">Telegram</a>
+      </div>
+      <div class="card">
+        <h2>Script Bug Wa Via Tele</h2>
+        <div class="features">
+        </div>
+        <div class="price">15.000</div>
+        <a class="btn" href="https://wa.me/6285741770268?text=Payment%20bang%20mau%20buy%20sc%20bug%20wa%20via%20tele" target="_blank">WhatsApp</a>
+        <a class="btn" href="https://t.me/SQUADCIT?text=Payment%20bang%20mau%20buy%20sc%20bug%20wa%20via%20tele" target="_blank">Telegram</a>
+      </div>
+      <div class="card">
+        <h2>Reseller Script Bug Wa Via Tele</h2>
+        <div class="features">
+        </div>
+        <div class="price">25.000</div>
+        <a class="btn" href="https://wa.me/6285741770268?text=Payment%20bang%20mau%20buy%20reseller%20sc%20bug%20wa%20via%20tele" target="_blank">WhatsApp</a>
+        <a class="btn" href="https://t.me/SQUADCIT?text=Payment%20bang%20mau%20buy%20reseller%20sc%20bug%20wa%20via%20tele" target="_blank">Telegram</a>
+      </div>
+      <div class="card">
+        <h2>Owner Script Bug Wa Via Tele</h2>
+        <div class="features">
+        </div>
+        <div class="price">35.000</div>
+        <a class="btn" href="https://wa.me/6285741770268?text=Payment%20bang%20mau%20buy%20owner%20sc%20bug%20wa%20via%20tele" target="_blank">WhatsApp</a>
+        <a class="btn" href="https://t.me/SQUADCIT?text=Payment%20bang%20mau%20buy%20owner%20sc%20bug%20wa%20via%20tele" target="_blank">Telegram</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splash Screen Script -->
+  <script>
+    setTimeout(() => {
+      document.getElementById("splash").style.display = "none";
+      document.getElementById("main").style.display = "block";
+      document.body.style.overflow = "auto";
+    }, 4000);
+  </script>
+
+  <!-- Particles.js Configuration -->
+  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 80, density: { enable: true, value_area: 800 } },
+        color: { value: "#00ccff" },
+        shape: { type: "circle" },
+        opacity: { value: 0.5 },
+        size: { value: 3 },
+        line_linked: {
+          enable: true,
+          distance: 150,
+          color: "#00ccff",
+          opacity: 0.4,
+          width: 1
+        },
+        move: { enable: true, speed: 3 }
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: {
+          onhover: { enable: true, mode: "repulse" },
+          onclick: { enable: true, mode: "push" }
+        },
+        modes: {
+          repulse: { distance: 100, duration: 0.4 },
+          push: { particles_nb: 4 }
+        }
+      },
+      retina_detect: true
+    });
+  </script>
+
+</body>
+</html>
